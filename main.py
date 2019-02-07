@@ -18,7 +18,8 @@ whether to the patient wants to use each sensor or not. So the
 patient can still run code if one or more sensors are not available.'''
 
 #file names:
-save_path = r'C:\Users\liamw\OneDrive\McMasterUniversity\IBEHS 1P10\IBioMed Projects\DP-3\code\VSC_DP3'
+# save_path = r'C:\Users\liamw\OneDrive\McMasterUniversity\IBEHS 1P10\IBioMed Projects\DP-3\code\VSC_DP3'
+save_path = './'
 name_of_file1 = "tempFile"
 name_of_file2 = "gsrFile"
 name_of_file3 = "heartFile"
@@ -51,7 +52,7 @@ def temp_average(sensor_data, temp_sum):
     for i in temp_list:
         temp_sum += i
     temp_avg = temp_sum/len(temp_list)
-    temp_avg = 10 #test value
+    # temp_avg = 10 #test value
     return temp_avg
 
 def temp_analysis(temp, sensor_data):
